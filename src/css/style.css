@@ -1,0 +1,58 @@
+body {
+  background-color: lightgrey;
+}
+
+.jumbotron {
+  background-color: lightgrey;
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+
+.logo {
+  float: left;
+  height: 10%;
+  width: 10%;
+}
+
+.icon {
+  width: 10%;
+}
+
+.pull-margin-right {
+  margin-right: 30px;
+}
+
+.pull-margin-left {
+  margin-left: 30px;
+}
+
+.pull-up {
+  margin-top: -20px;
+}
+
+h1, h2, h3, p {
+  color: #2d3c49;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  color: #7d97ad;
+}
+
+p {
+  color: black;
+}
+
+footer {
+  padding-bottom: 20px;
+}
+
+hr {
+  height: 3px;
+  border-color: lightgrey;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+img {
+  width: 100%;
+}
