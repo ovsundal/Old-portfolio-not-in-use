@@ -12,10 +12,13 @@ body {
   float: left;
   height: 10%;
   width: 10%;
+  min-width: 80px;
+
 }
 
 .icon {
-  width: 10%;
+  width: 5%;
+  min-width: 40px;
 }
 
 .pull-margin-right {
@@ -30,17 +33,24 @@ body {
   margin-top: -20px;
 }
 
-h1, h2, h3, p {
+h1 {
+  color: #2d3c49;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
   color: #2d3c49;
   font-family: 'Roboto', sans-serif;
 }
 
 h3 {
   color: #7d97ad;
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
   color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 footer {
