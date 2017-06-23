@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: lightgrey;
 }
@@ -9,16 +16,14 @@ body {
 }
 
 .logo {
-  float: left;
-  height: 10%;
-  width: 10%;
   min-width: 80px;
+  max-width: 200px;
 
 }
 
 .icon {
-  width: 5%;
-  min-width: 40px;
+  width: 15%;
+  min-width: 50px;
 }
 
 .pull-margin-right {
