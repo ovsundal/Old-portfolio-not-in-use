@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="src/css/bootstrap.min.css">
   <link rel="stylesheet" href="src/css/style.css">
-  <script src="src/js/bootstrap.min.js"></script>
-  <script src="src/js/jquery.min.js"></script>
 
 </head>
 
@@ -37,15 +35,18 @@
       </div>
     </div>
 
-    <main class="row text-center">
-        <div class="col-sm-12">
-          <h3>Featured Work</h3>
+    <main class="row">
+        <div class="col-sm-12 text-center">
+          <h2>Featured Work</h2>
         </div>
 
         <article class="col-sm-3">
-          <img src="dist/images/project1-450w.jpeg" class="img-responsive" alt="Image">
-          <p>PROJECT 1</p>
-          <p>HTTP://project.example.com</p>
+          <img id="resume-image" src="dist/images/project1-450w.jpeg"
+          class="img-responsive cursor-link" alt="Image">
+          <h3 class="text-center project-title">Resume</h3>
+          <p><a href="https://ovsundal.github.io/frontend-nanodegree-resume/">
+            https://ovsundal.github.io/frontend-nanodegree-resume/</a></p>
+            <p class="keywords">JS, Jquery, OOP</p>
         </article>
 
         <article class="col-sm-3">
@@ -75,7 +76,8 @@
     <footer class="row">
 
       <div class="col-xs-4 col-sm-push-2">
-        <img class="icon img-responsive center-block" src="src/images/fixed/github.svg" alt="Github">
+        <img id="github-icon" class="icon img-responsive center-block cursor-link"
+        src="src/images/fixed/github.svg" alt="Github">
       </div>
       <div class="col-xs-4">
         <img class="icon img-responsive center-block" src="src/images/fixed/linkedin.svg" alt="LinkedIn">
@@ -84,7 +86,9 @@
         <img class="icon img-responsive center-block" src="src/images/fixed/udacity.svg" alt="Udacity">
       </div>
     </footer>
-
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/js/script.js"></script>
   </div>
 </body>
 
