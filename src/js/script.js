@@ -1,8 +1,12 @@
 $(document).ready(function() {
 
-    $(".cursor-link").hover(function(){ $(this).toggleClass('shadow-effect'); });
+    //shadow effect when hovering
+    $(".cursor-link").hover(
+        function(){ $(this).removeClass('shadow-effect') },
 
+        function() { $(this).toggleClass('shadow-effect')});
 
+    //link references
     $("#resume-image").click(function () {
         window.open("https://ovsundal.github.io/Resume/");
     });
