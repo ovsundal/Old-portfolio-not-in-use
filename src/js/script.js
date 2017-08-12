@@ -10,7 +10,7 @@ let projects = [
     {
         pictureUrl: "src/images/project2.jpeg",
         title: "Neigborhood Map of Stavanger",
-        keywords: "knockoutJs (MVVM), async API requests, google maps",
+        keywords: "jquery, knockoutJs (MVVM), async API requests, google maps",
         projectUrl: "https://github.com/ovsundal/Neighborhood-Map-of-Stavanger",
         introduction: "Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum",
         learningOutcomes: "learningOutcomes",
@@ -18,15 +18,15 @@ let projects = [
     {
         pictureUrl: "src/images/website-optimization-450w.jpg",
         title: "Website Optimisation",
-        keywords: "gulp task runner, file minification, google pagespeed",
+        keywords: "gulp task runner, file minification/inlining, google pagespeed",
         projectUrl: "https://ovsundal.github.io/Frogger-Arcade-Game/",
         introduction: "Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum",
         learningOutcomes: "learningOutcomes",
     },
     {
-        pictureUrl: "src/images/Frogger-image.jpg",
+        pictureUrl: "src/images/frogger-arcade-game-450w.jpg",
         title: "Frogger Arcade Game",
-        keywords: "OOP, HTML5 Canvas",
+        keywords: "OOP, HTML5 Canvas, chrome devtools debugging",
         projectUrl: "https://ovsundal.github.io/Frogger-Arcade-Game/",
         introduction: "Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum",
         learningOutcomes: "learningOutcomes",
@@ -36,35 +36,46 @@ let projects = [
 //create project
 projects.forEach(function (project) {
 
+    //set id to be project concatenated title
+    let pictureId = project.title.replace(/ /g, '');
+
+    //create DOM elements
     $('#projectHolder')
         .append(
             '<article class="col-sm-3">' +
-            '<img id="project.title" src="' + project.pictureUrl + '" class="img-responsive cursor-link" alt="Image" />' +
+            '<img id=' + pictureId + ' src="' + project.pictureUrl + '" class="img-rounded img-responsive cursor-link" alt="Image" />' +
             '<h3 class="text-center project-title">' + project.title + "</h3>" +
             '<div class="text-center"><i>' + project.keywords + '</i></div>' +
-            '</article>'
+            '</br></article>'
         );
 
-    $("#" + project.title).click(function () {
-        window.open(project.name);
-    });
+    //store project object and pass it to click function
+    $('#' + pictureId)
+        .data(project)
+        .click(function () {
+            let projectClicked = $(this).data();
 
+            //open url of passed object
+            window.open(projectClicked.projectUrl);
+    });
 });
+
 
 
 $(document).ready(function () {
 
+    //shadow effect for clickables
     $(".cursor-link").hover(function () {
         $(this).toggleClass('shadow-effect');
     });
 
 
-    $("#resume-image").click(function () {
-        window.open("https://ovsundal.github.io/Resume/");
-    });
-    $("#frogger-image").click(function () {
-        window.open("https://ovsundal.github.io/Frogger-Arcade-Game/");
-    });
+    // $("#resume-image").click(function () {
+    //     window.open("https://ovsundal.github.io/Resume/");
+    // });
+    // $("#frogger-image").click(function () {
+    //     window.open("https://ovsundal.github.io/Frogger-Arcade-Game/");
+    // });
 
     $("#github-icon").click(function () {
         window.open("https://github.com/ovsundal");
