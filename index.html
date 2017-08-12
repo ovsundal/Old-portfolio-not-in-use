@@ -19,8 +19,8 @@
           <img class="logo img-responsive center-block" src="src/images/fixed/logo.svg" alt="Logo">
         </div>
         <div class="col-xs-12 col-sm-9 text-center">
-          <h1>Ove Sundal</h1>
-          <h2>Computer Engineer</h2>
+          <h1 id="name"></h1>
+          <h2 id="title"></h2>
         </div>
       </div>
     </header>
@@ -28,19 +28,17 @@
     <div class="row">
       <div class="col-md-12 text-center">
         <hr>
-        <p>
-          Hi there! My name is Ove Sundal, a computer engineer focusing on front-end web development. <br>
-            Feel free to view my projects, and don't be afraid to drop me an
-            <a href="http://www.google.com/recaptcha/mailhide/d?k=01xjiIWsKCKvWfEk5c3nq9Hg==&amp;c=R-Hxt4dGCqIlTbMnxPGOEq_SzvcCdz4ptMH2C6SeSO8=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01xjiIWsKCKvWfEk5c3nq9Hg\x3d\x3d\x26c\x3dR-Hxt4dGCqIlTbMnxPGOEq_SzvcCdz4ptMH2C6SeSO8\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">email</a>
-        </p>
+        <p id="greeting"></p>
         <hr>
       </div>
     </div>
 
     <main class="row">
         <div class="col-sm-12 text-center">
-          <h2>Featured Work</h2>
+          <h2 id="work"></h2>
         </div>
+
+        <!--projects-->
         <article id="projectHolder"></article>
 
         <div class="col-sm-12">
@@ -49,16 +47,16 @@
 
     </main>
 
-      <footer class="row">
+      <footer class="row" id="iconHolder">
 
-          <div class="col-xs-6 col-xs-push-1">
-              <img id="github-icon" class="icon img-responsive center-block cursor-link shadow-effect"
-                   src="src/images/fixed/github.svg" alt="Github">
-          </div>
-          <div class="col-xs-6 col-xs-pull-1">
-              <img id="linkedIn-icon" class="icon img-responsive center-block cursor-link shadow-effect"
-                   src="src/images/fixed/linkedin.svg" alt="LinkedIn">
-          </div>
+          <!--<div class="col-xs-6 col-xs-push-1">-->
+              <!--<img id="github-icon" class="icon img-responsive center-block cursor-link shadow-effect"-->
+                   <!--src="src/images/fixed/github.svg" alt="Github">-->
+          <!--</div>-->
+          <!--<div class="col-xs-6 col-xs-pull-1">-->
+              <!--<img id="linkedIn-icon" class="icon img-responsive center-block cursor-link shadow-effect"-->
+                   <!--src="src/images/fixed/linkedin.svg" alt="LinkedIn">-->
+          <!--</div>-->
       </footer>
 
     <script src="src/js/jquery.min.js"></script>
