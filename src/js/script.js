@@ -1,11 +1,12 @@
-let personalia = {
+let emailHider = "<a href='http://www.google.com/recaptcha/mailhide/d?k=01xjiIWsKCKvWfEk5c3nq9Hg==&amp;c=R-Hxt4dGCqIlTbMnxPGOEq_SzvcCdz4ptMH2C6SeSO8='" + "onclick='window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01xjiIWsKCKvWfEk5c3nq9Hg\x3d\x3d\x26c\x3dR-Hxt4dGCqIlTbMnxPGOEq_SzvcCdz4ptMH2C6SeSO8\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" + 'title="Reveal this e-mail address">email</a>';
+
+    let personalia = {
 
     name: 'Ove Sundal',
     title: 'Computer Engineer',
     greeting: 'Hi there! My name is Ove Sundal, a computer engineer focusing on front-end web development. ' +
-    'Feel free to view my projects, and don\'t be afraid to drop me an email',
+    'Feel free to view my projects, and don\'t be afraid to drop me an ' + emailHider,
     work: 'Featured work'
-
 };
 
 //todo: use this to hide email:
