@@ -2,7 +2,7 @@ let projects = [
     {
         pictureUrl: "src/images/feed-reader-testing-450w.jpg",
         title: "Feed Reader Testing",
-        keywords: "jasmine framework, unit testing",
+        keywords: "JavaScript, Jasmine, JavaScript testing frameworks",
         projectUrl: "https://ovsundal.github.io/Feed-Reader-Testing/",
         introduction: "Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum",
         learningOutcomes: "Jasmine testing framework, async unit testing"
@@ -18,15 +18,15 @@ let projects = [
     {
         pictureUrl: "src/images/website-optimization-450w.jpg",
         title: "Website Optimisation",
-        keywords: "gulp task runner, file minification/inlining, google pagespeed",
-        projectUrl: "https://ovsundal.github.io/Frogger-Arcade-Game/",
+        keywords: "critical rendering path, 60FPS rendering, gulp task runner, Chrome Developer Tools",
+        projectUrl: "https://github.com/ovsundal/Website-Performance-Optimization",
         introduction: "Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum",
         learningOutcomes: "learningOutcomes",
     },
     {
         pictureUrl: "src/images/frogger-arcade-game-450w.jpg",
         title: "Frogger Arcade Game",
-        keywords: "OOP, HTML5 Canvas, chrome devtools debugging",
+        keywords: "Javascript, OOP, HTML5 Canvas",
         projectUrl: "https://ovsundal.github.io/Frogger-Arcade-Game/",
         introduction: "Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum",
         learningOutcomes: "learningOutcomes",
@@ -49,18 +49,16 @@ projects.forEach(function (project) {
             '</br></article>'
         );
 
-    //store project object and pass it to click function
+    //store project object
     $('#' + pictureId)
         .data(project)
+        //hook up click function to picture
         .click(function () {
             let projectClicked = $(this).data();
-
             //open url of passed object
             window.open(projectClicked.projectUrl);
     });
 });
-
-
 
 $(document).ready(function () {
 
@@ -68,14 +66,6 @@ $(document).ready(function () {
     $(".cursor-link").hover(function () {
         $(this).toggleClass('shadow-effect');
     });
-
-
-    // $("#resume-image").click(function () {
-    //     window.open("https://ovsundal.github.io/Resume/");
-    // });
-    // $("#frogger-image").click(function () {
-    //     window.open("https://ovsundal.github.io/Frogger-Arcade-Game/");
-    // });
 
     $("#github-icon").click(function () {
         window.open("https://github.com/ovsundal");
