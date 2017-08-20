@@ -1,16 +1,14 @@
 let emailHider = "<a href='http://www.google.com/recaptcha/mailhide/d?k=01xjiIWsKCKvWfEk5c3nq9Hg==&amp;c=R-Hxt4dGCqIlTbMnxPGOEq_SzvcCdz4ptMH2C6SeSO8='" + "onclick='window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01xjiIWsKCKvWfEk5c3nq9Hg\x3d\x3d\x26c\x3dR-Hxt4dGCqIlTbMnxPGOEq_SzvcCdz4ptMH2C6SeSO8\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" + 'title="Reveal this e-mail address">email</a>';
 
-    let personalia = {
+let personalia = {
 
     name: 'Ove Sundal',
     title: 'Computer Engineer',
     greeting: 'Hi there! My name is Ove Sundal, a computer engineer focusing on front-end web development. ' +
-    'Feel free to view my projects, and don\'t be afraid to drop me an ' + emailHider,
+    'Feel free to view my projects, and don\'t be afraid to drop me an ',
+    email: "<a href='http://www.google.com/recaptcha/mailhide/d?k=01xjiIWsKCKvWfEk5c3nq9Hg==&amp;c=R-Hxt4dGCqIlTbMnxPGOEq_SzvcCdz4ptMH2C6SeSO8='" + "onclick='window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01xjiIWsKCKvWfEk5c3nq9Hg\x3d\x3d\x26c\x3dR-Hxt4dGCqIlTbMnxPGOEq_SzvcCdz4ptMH2C6SeSO8\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" + 'title="Reveal this e-mail address">email</a>',
     work: 'Featured work'
 };
-
-//todo: use this to hide email:
-// <a href="http://www.google.com/recaptcha/mailhide/d?k=01xjiIWsKCKvWfEk5c3nq9Hg==&amp;c=R-Hxt4dGCqIlTbMnxPGOEq_SzvcCdz4ptMH2C6SeSO8=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01xjiIWsKCKvWfEk5c3nq9Hg\x3d\x3d\x26c\x3dR-Hxt4dGCqIlTbMnxPGOEq_SzvcCdz4ptMH2C6SeSO8\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">email</a>
 
 let projects = [
     {
@@ -22,10 +20,10 @@ let projects = [
         learningOutcomes: "Jasmine testing framework, async unit testing"
     },
     {
-        pictureUrl: "src/images/project2.jpeg",
-        title: "Neigborhood Map of Stavanger",
+        pictureUrl: "src/images/neighborhood-map-stavanger-450w.jpg",
+        title: "Neighborhood Map of Stavanger",
         keywords: "jquery, knockoutJs (MVVM), async API requests, google maps",
-        projectUrl: "https://github.com/ovsundal/Neighborhood-Map-of-Stavanger",
+        projectUrl: "https://ovsundal.github.io/Neighborhood-Map-of-Stavanger/",
         introduction: "Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum",
         learningOutcomes: "learningOutcomes",
     },
@@ -50,7 +48,7 @@ let projects = [
 //add personalia
 $('#name').append(personalia.name);
 $('#title').append(personalia.title);
-$('#greeting').append(personalia.greeting);
+$('#greeting').append(personalia.greeting + personalia.email);
 $('#work').append(personalia.work);
 
 //create project
