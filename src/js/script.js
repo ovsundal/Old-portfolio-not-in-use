@@ -12,20 +12,20 @@ let personalia = {
 
 let projects = [
     {
-        pictureUrl: "src/images/feed-reader-testing-450w.jpg",
-        title: "Feed Reader Testing",
-        keywords: "JavaScript, Jasmine, JavaScript testing frameworks",
-        projectUrl: "https://ovsundal.github.io/Feed-Reader-Testing/",
-        introduction: "Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum",
-        learningOutcomes: "Jasmine testing framework, async unit testing"
-    },
-    {
         pictureUrl: "src/images/neighborhood-map-stavanger-450w.jpg",
         title: "Neighborhood Map of Stavanger",
         keywords: "jquery, knockoutJs (MVVM), async API requests, google maps",
         projectUrl: "https://ovsundal.github.io/Neighborhood-Map-of-Stavanger/",
         introduction: "Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum",
         learningOutcomes: "learningOutcomes",
+    },
+    {
+        pictureUrl: "src/images/feed-reader-testing-450w.jpg",
+        title: "Feed Reader Testing",
+        keywords: "JavaScript, Jasmine, JavaScript testing frameworks",
+        projectUrl: "https://ovsundal.github.io/Feed-Reader-Testing/",
+        introduction: "Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsum",
+        learningOutcomes: "Jasmine testing framework, async unit testing"
     },
     {
         pictureUrl: "src/images/website-optimization-450w.jpg",
