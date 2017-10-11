@@ -88,7 +88,7 @@ $('#iconHolder').append(
     '</div>' +
     //linkedIn icon
     '<div class="col-xs-6 col-xs-pull-1">' +
-        '<img id="github-icon" class="icon img-responsive center-block cursor-link "' +
+        '<img id="linkedIn-icon" class="icon img-responsive center-block cursor-link "' +
         ' src="src/images/fixed/linkedin.svg" alt="linkedIn logo"/>' +
     '</div>'
 );
